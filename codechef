@@ -1,0 +1,21 @@
+impot java.util.*;
+public class Piglatin{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int i,l;
+String st,st1="",st2="",st3="";
+char ch=0;
+System.out.println("Enter a word in lowercase");
+st=sc.next();
+l=st.length();
+for(i=0;i<l;i++){
+ch=st.charAt(i);
+if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+break;
+}
+st1=st.substring(i,l);
+st2=st.substring(0,i);
+st3=st1+st2+"ay";
+System.out.println(st3);
+}
+}
